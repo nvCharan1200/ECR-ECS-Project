@@ -4,6 +4,10 @@ phases:
   install:
     commands:
       - echo "No installation needed for static HTML"
+      - curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+      - unzip awscliv2.zip
+      - sudo ./aws/install
+
 
   pre_build:
     commands:
